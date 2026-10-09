@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#155d3b">
+<title>Healthy Kitchen — Homemade Meals</title>
+<style>
+:root{--green:#155d3b;--green2:#e8f4eb;--red:#9b2c36;--ink:#18251d;--muted:#68746c;--line:#dfe8e1;--bg:#f7faf7}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+header{background:linear-gradient(130deg,#10452d,#24784d);color:white;padding:24px 16px 20px}.wrap{max-width:950px;margin:auto}
+.brand{display:flex;gap:13px;align-items:center}.logo{width:54px;height:54px;border-radius:16px;background:#ffffff20;display:grid;place-items:center;font-size:31px}
+h1{font-size:25px;line-height:1.1;margin:0;text-transform:uppercase;letter-spacing:.5px}header p{margin:7px 0 0;color:#e2f4e7;font-size:13px}.pill{display:inline-block;margin-top:14px;border:1px solid #ffffff50;border-radius:99px;padding:7px 11px;font-size:12px}
+main{padding:18px 13px 42px}.hero{border-radius:16px;background:#e9f5ec;padding:17px;margin-bottom:17px;border:1px solid #d6e9da}.hero h2{margin:0 0 5px;font-size:20px}.hero p{margin:0;color:#526357;font-size:13px;line-height:1.5}
+.notice{font-size:12px;color:#654b22;background:#fff5df;border:1px solid #f0dbab;padding:11px 12px;border-radius:11px;margin-bottom:16px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:13px 0 17px}.tab{background:white;border:1px solid var(--line);border-radius:99px;padding:10px 14px;font-weight:700;cursor:pointer}.tab.active{background:var(--green);color:white;border-color:var(--green)}
+h2.section{font-size:19px;margin:20px 0 11px}.menu-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.card{background:white;border:1px solid var(--line);border-radius:15px;padding:13px;display:flex;flex-direction:column;min-height:160px}.day{font-size:11px;letter-spacing:.6px;color:var(--green);font-weight:850;text-transform:uppercase}.card h3{font-size:15px;margin:5px 0 6px}.card p{font-size:12px;color:var(--muted);margin:0 0 12px;line-height:1.45;flex:1}.bottom{display:flex;align-items:center;justify-content:space-between;gap:6px}.price{font-size:16px;font-weight:850}.add{background:var(--green);color:white;border:0;border-radius:9px;padding:8px 10px;font-weight:750;cursor:pointer}
+.plans{display:grid;grid-template-columns:1fr;gap:10px}.plan{background:white;border:1px solid var(--line);border-radius:14px;padding:14px}.plan h3{margin:0 0 4px;font-size:14px}.plan .price{font-size:23px;color:var(--green)}.plan p{margin:5px 0 10px;color:var(--muted);font-size:12px}.plan button{width:100%;border:1px solid var(--green);background:var(--green2);color:var(--green);border-radius:9px;padding:9px;font-weight:750;cursor:pointer}
+.cart,.contact{background:white;border:1px solid var(--line);border-radius:16px;padding:15px;margin-top:18px}.cart h2,.contact h2{font-size:19px;margin:0 0 12px}.lineitem{display:flex;align-items:center;gap:8px;padding:10px 0;border-bottom:1px solid var(--line)}.iname{flex:1;font-size:13px;font-weight:650}.qty{display:flex;align-items:center;gap:7px}.qty button{width:27px;height:27px;border:1px solid var(--line);border-radius:7px;background:white;font-size:17px}.sum{display:flex;justify-content:space-between;padding:14px 0;font-weight:850}.form{display:grid;gap:10px}label{font-size:12px;font-weight:750;color:#45564a}input,textarea,select{width:100%;padding:12px;border:1px solid #d8e2da;border-radius:10px;font:inherit;background:white}textarea{min-height:65px;resize:vertical}.twocol{display:grid;grid-template-columns:1fr 1fr;gap:9px}.primary{width:100%;padding:14px;border:0;border-radius:11px;background:#16834e;color:white;font-size:15px;font-weight:850;cursor:pointer}.primary:disabled{opacity:.45}.sub{font-size:12px;color:var(--muted);line-height:1.5}.contact a{color:var(--green);font-weight:750;text-decoration:none}.footer{text-align:center;color:var(--muted);font-size:12px;padding:20px 0}
+@media(min-width:650px){.menu-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.plans{grid-template-columns:repeat(3,1fr)}header{padding:28px 22px}main{padding:22px 20px 45px}}
+</style></head>
+<body>
+<header><div class="wrap"><div class="brand"><div class="logo">🌿</div><div><h1>Healthy Kitchen</h1><p>We care your health · Homemade meals, made with care</p></div></div><div class="pill">🥬 Veg meals &nbsp; • &nbsp; 🍗 Non-veg meals &nbsp; • &nbsp; Delivery available in Bhubaneswar</div></div></header>
+<main class="wrap">
+<div class="hero"><h2>Homely food, every day ❤️</h2><p>Choose your lunch or dinner from our weekly menu, or ask us about a monthly subscription. We serve home-style meals with delivery included in our listed subscription plans.</p></div>
+<div class="notice"><strong>Menu and pricing:</strong> Daily instant-order prices are ₹70 for veg and ₹80 for non-veg. Monthly subscription prices shown below are from your menu chart. Daily meal items and availability should be confirmed with the kitchen.</div>
+<h2 class="section">Order a meal</h2>
+<div class="tabs"><button class="tab active" data-filter="all">All meals</button><button class="tab" data-filter="veg">🟢 Veg</button><button class="tab" data-filter="nonveg">🔴 Non-veg</button></div>
+<div class="menu-grid" id="menu"></div>
+<h2 class="section">Monthly subscription plans</h2>
+<div class="plans" id="plans"></div>
+<section class="cart"><h2>🛒 Your order</h2><div id="items" class="sub">Your cart is empty. Add a meal or subscription plan.</div><div class="sum"><span>Total</span><span id="total">₹0</span></div>
+<form class="form" id="checkout"><div class="twocol"><div><label for="name">Your name *</label><input id="name" required placeholder="Full name"></div><div><label for="phone">Phone number *</label><input id="phone" required inputmode="tel" placeholder="Mobile number"></div></div><div><label for="address">Delivery address *</label><textarea id="address" required placeholder="House, street, landmark, area"></textarea></div><div class="twocol"><div><label for="orderType">Order type</label><select id="orderType"><option>Home delivery</option><option>Pickup</option></select></div><div><label>Payment method</label><input value="Cash on delivery only" readonly aria-readonly="true"></div></div><div><label for="notes">Instructions (optional)</label><input id="notes" placeholder="Spice preference or other request"></div><button id="submit" class="primary" type="submit" disabled>Prepare WhatsApp order</button></form><div id="send-options" hidden style="margin-top:12px;display:none;gap:8px"><p><strong>Send your order to both kitchen numbers:</strong></p><a id="send1" class="primary" style="display:block;text-align:center;text-decoration:none" target="_blank" rel="noopener">Send to 6370333967</a><a id="send2" class="primary" style="display:block;text-align:center;text-decoration:none;background:#155d3b" target="_blank" rel="noopener">Send to 7657070915</a><p class="sub">For both numbers to receive the order, open each link and tap Send in WhatsApp.</p></div><p class="sub">Your order is a request until the kitchen confirms it. Delivery area and availability will be confirmed by the owner.</section>
+<section class="contact"><h2>Contact Healthy Kitchen</h2><p><strong>Call:</strong> <a href="tel:6370333967">6370333967</a> · <a href="tel:7657070915">7657070915</a></p><p><strong>Address:</strong> Plot No. 5347, Ganesh Bihar, Patharagadia, Bhubaneswar, 751024</p><p class="sub">Service available all over Bhubaneswar (as stated on your menu chart).</p></section>
+<div class="footer">Healthy Kitchen · We care your health 🌿</div>
+</main>
+<script>
+/* OWNER SETTINGS: Add your WhatsApp number below as 91 followed by 10 digits, with no + or spaces. */
+const WHATSAPP_NUMBERS = ["916370333967", "917657070915"];
+const dailyPrices={veg:70,nonveg:80};
+const meals=[
+{ id:"monl",day:"Monday · Lunch",type:"veg",name:"Rice, Dalma & Mix Veg",desc:"Rice, dalma, mix veg, saag and papad."},
+{ id:"tuel",day:"Tuesday · Lunch",type:"veg",name:"Mushroom Curry Meal",desc:"Rice, dal, mushroom curry, vaji and salad."},
+{ id:"wedl",day:"Wednesday · Lunch",type:"nonveg",name:"Fish Curry Meal",desc:"Rice, dal, fish curry, aalu varta and salad."},
+{ id:"thul",day:"Thursday · Lunch",type:"veg",name:"Seasonal Veg Meal",desc:"Rice, dal, seasonal veg curry, vaji and papad."},
+{ id:"fril",day:"Friday · Lunch",type:"nonveg",name:"Egg Curry Meal",desc:"Rice, dal, egg curry, aalu varta and salad."},
+{ id:"satl",day:"Saturday · Lunch",type:"veg",name:"Paneer Curry Meal",desc:"Rice, dal, paneer curry, vaji and papad."},
+{ id:"sunl",day:"Sunday · Lunch",type:"nonveg",name:"Chicken Curry Meal",desc:"Rice, dal, chicken curry, aalu varta and salad."},
+{ id:"mond",day:"Monday · Dinner",type:"veg",name:"Matar Paneer",desc:"Rice or roti with matar paneer."},
+{ id:"tued",day:"Tuesday · Dinner",type:"veg",name:"Channa Masala",desc:"Rice or roti with channa masala."},
+{ id:"wedd",day:"Wednesday · Dinner",type:"veg",name:"Mudi Ghanta",desc:"Rice or roti with mudi ghanta."},
+{ id:"thud",day:"Thursday · Dinner",type:"veg",name:"Mix Veg",desc:"Rice or roti with mixed vegetables."},
+{ id:"frid",day:"Friday · Dinner",type:"nonveg",name:"Masala Chicken",desc:"Rice or roti with masala chicken."},
+{ id:"satd",day:"Saturday · Dinner",type:"veg",name:"Seasonal Curry",desc:"Rice or roti with seasonal curry."},
+{ id:"sund",day:"Sunday · Dinner",type:"nonveg",name:"Egg Tadka",desc:"Rice or roti with egg tadka."}
+];
+const plans=[
+{id:"lunchplan",name:"Only Lunch",price:1800,desc:"Monthly subscription · lunch only"},
+{id:"dinnerplan",name:"Only Dinner",price:1800,desc:"Monthly subscription · dinner only"},
+{id:"bothplan",name:"Both Lunch & Dinner",price:3500,desc:"Monthly subscription · lunch and dinner"}
+];
+const cart={};let filter="all";
+const money=n=>"₹"+n;
+function renderMenu(){document.getElementById("menu").innerHTML=meals.filter(m=>filter==="all"||m.type===filter).map(m=>`<article class="card"><div class="day">${m.day}</div><h3>${m.type==="veg"?"🟢":"🔴"} ${m.name}</h3><p>${m.desc}</p><div class="bottom"><span class="price">${money(dailyPrices[m.type])}</span><button class="add" onclick="add('${m.id}')">+ Add</button></div></article>`).join("")}
+function renderPlans(){document.getElementById("plans").innerHTML=plans.map(p=>`<article class="plan"><h3>${p.name}</h3><div class="price">${money(p.price)}<span style="font-size:12px;font-weight:600"> / month</span></div><p>${p.desc}. Delivery included as shown on menu.</p><button onclick="add('${p.id}')">Choose plan</button></article>`).join("")}
+function getItem(id){return meals.find(x=>x.id===id)||plans.find(x=>x.id===id)}
+function priceOf(item){return item.price||dailyPrices[item.type]}
+function add(id){cart[id]=(cart[id]||0)+1;renderCart()}
+function qty(id,d){cart[id]=(cart[id]||0)+d;if(cart[id]<=0)delete cart[id];renderCart()}
+function renderCart(){let ids=Object.keys(cart),total=0;const box=document.getElementById("items");if(!ids.length){box.textContent="Your cart is empty. Add a meal or subscription plan.";box.className="sub"}else{box.className="";box.innerHTML=ids.map(id=>{let x=getItem(id),p=priceOf(x),s=p*cart[id];total+=s;return `<div class="lineitem"><div class="iname">${x.name}<div class="sub">${money(p)}${x.price? " / month":" per meal"}</div></div><div class="qty"><button type="button" onclick="qty('${id}',-1)">−</button><strong>${cart[id]}</strong><button type="button" onclick="qty('${id}',1)">+</button></div><strong>${money(s)}</strong></div>`}).join("")}document.getElementById("total").textContent=money(total);document.getElementById("submit").disabled=!ids.length}
+document.querySelectorAll(".tab").forEach(b=>b.onclick=()=>{filter=b.dataset.filter;document.querySelectorAll(".tab").forEach(x=>x.classList.toggle("active",x===b));renderMenu()});
+document.getElementById("checkout").addEventListener("submit",e=>{e.preventDefault();let ids=Object.keys(cart);if(!ids.length)return;let total=0,lines=ids.map(id=>{let x=getItem(id),p=priceOf(x);total+=p*cart[id];return `• ${x.name} × ${cart[id]} — ${money(p*cart[id])}${x.price?" per month":""}`}).join("\\n");let msg=`NEW ORDER — HEALTHY KITCHEN\\n\\n${lines}\\n\\nTotal: ${money(total)}\\nCustomer: ${document.getElementById("name").value}\\nPhone: ${document.getElementById("phone").value}\\nAddress: ${document.getElementById("address").value}\\nOrder type: ${document.getElementById("orderType").value}\\nPayment method: Cash on delivery only\\nInstructions: ${document.getElementById("notes").value||"None"}\\n\\nPlease confirm availability and order.`;const encoded=encodeURIComponent(msg);document.getElementById("send1").href="https://wa.me/"+WHATSAPP_NUMBERS[0]+"?text="+encoded;document.getElementById("send2").href="https://wa.me/"+WHATSAPP_NUMBERS[1]+"?text="+encoded;const opts=document.getElementById("send-options");opts.hidden=false;opts.style.display="grid";opts.scrollIntoView({behavior:"smooth",block:"center"})});
+renderMenu();renderPlans();renderCart();
+</script></body></html>
